@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Test</title>
+
+	<style>
+		body { margin: 0; padding: 0; font-family: sans-serif; 
+			transition: background-color 0.4s linear;
+			-webkit-transition: background-color 0.4s linear;
+		}
+		#header { padding: 20px 16px; margin-bottom: 40px; background-color: white;}
+		#wrap{ width: 80%; padding: 40px 48px; }
+		h1 span { font-size: 1.6rem; padding-left: 12px; }
+		section { margin: 0 16px; }
+		.color-title { font-weight: bold; font-size: 1.4rem; }
+		.color-description { margin-bottom: 40px; font-size: 0.8rem;}
+	</style>
+
+	<script>
+		function setBG_Black(){ document.querySelector("body").style.backgroundColor = "black"; setColor(".color-title","white");}
+		function setBG_White(){ document.querySelector("body").style.backgroundColor = "White"; setColor(".color-title","black");}
+		function setColor(t,c){ [].forEach.call(document.querySelectorAll(t), function(tag) { tag.style.color = c; }); }
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<h1>Color Test<span>: 10 - Edge & 10 Mobile - Edge</span></h1>
+			<nav>
+				<a href="#" onclick="setBG_Black()">背景：黒</a>｜
+				<a href="#" onclick="setBG_White()">背景：白</a>
+			</nav>
+		</header>
+		<section>
+
+			<div class="color-title">ActiveBorder</div>
+			<div class="color-description" style="color:ActiveBorder">アクティブウィンドウの枠線色</div>
+
+			<div class="color-title">InactiveCaptionText</div>
+			<div class="color-description" style="color:InactiveCaptionText">非アクティブウィンドウのタイトルバーの文字色</div>
+
+			<div class="color-title">ActiveCaption</div>
+			<div class="color-description" style="color:ActiveCaption">アクティブウィンドウのタイトルバーの色</div>
+
+			<div class="color-title">InfoBackground</div>
+			<div class="color-description" style="color:InfoBackground">ツールチップの背景色</div>
+
+			<div class="color-title">AppWorkspace</div>
+			<div class="color-description" style="color:AppWorkspace">アプリケーション作業領域の色</div>
+
+			<div class="color-title">InfoText</div>
+			<div class="color-description" style="color:InfoText">ツールチップの文字色</div>
+
+			<div class="color-title">Background</div>
+			<div class="color-description" style="color:Background">デスクトップの背景色</div>
+
+			<div class="color-title">Menu</div>
+			<div class="color-description" style="color:Menu">メニューの背景色</div>
+
+			<div class="color-title">ButtonFace</div>
+			<div class="color-description" style="color:ButtonFace">ボタンの表面色</div>
+
+			<div class="color-title">MenuText</div>
+			<div class="color-description" style="color:MenuText">メニューの文字色</div>
+
+			<div class="color-title">ButtonHighlight</div>
+			<div class="color-description" style="color:ButtonHighlight">ボタンの明るい面の色</div>
+
+			<div class="color-title">Scrollbar</div>
+			<div class="color-description" style="color:Scrollbar">スクロールバーの色</div>
+
+			<div class="color-title">ButtonShadow</div>
+			<div class="color-description" style="color:ButtonShadow">ボタンの影の色</div>
+
+			<div class="color-title">ThreeDDarkshadow</div>
+			<div class="color-description" style="color:ThreeDDarkshadow">立体的な部分の暗い影の色</div>
+
+			<div class="color-title">ButtonText</div>
+			<div class="color-description" style="color:ButtonText">ボタンのテキストカラー</div>
+
+			<div class="color-title">ThreeDShadow</div>
+			<div class="color-description" style="color:ThreeDShadow">立体的な部分の影の色</div>
+
+			<div class="color-title">CaptionText</div>
+			<div class="color-description" style="color:CaptionText">タイトルバーの文字色</div>
+
+			<div class="color-title">ThreeDLightShadow</div>
+			<div class="color-description" style="color:ThreeDLightShadow">立体的な部分の明るい影の色</div>
+
+			<div class="color-title">GrayText</div>
+			<div class="color-description" style="color:GrayText">選択できない無効の部分の色</div>
+
+			<div class="color-title">ThreeDFace</div>
+			<div class="color-description" style="color:ThreeDFace">立体的な部分の表面の色</div>
+
+			<div class="color-title">Highlight</div>
+			<div class="color-description" style="color:Highlight">選択（反転）部分の色</div>
+
+			<div class="color-title">ThreeDHighlight</div>
+			<div class="color-description" style="color:ThreeDHighlight">立体的な部分の明るい色</div>
+
+			<div class="color-title">HighlightText</div>
+			<div class="color-description" style="color:HighlightText">選択部分の文字色</div>
+
+			<div class="color-title">Window</div>
+			<div class="color-description" style="color:Window">ウィンドウの背景色</div>
+
+			<div class="color-title">InactiveBorder</div>
+			<div class="color-description" style="color:InactiveBorder">非アクティブウィンドウの枠線の色</div>
+
+			<div class="color-title">WindowFrame</div>
+			<div class="color-description" style="color:WindowFrame">ウィンドウの枠の色</div>
+
+			<div class="color-title">InactiveCaption</div>
+			<div class="color-description" style="color:InactiveCaption">非アクティブウィンドウのタイトルバーの色</div>
+
+			<div class="color-title">WindowText</div>
+			<div class="color-description" style="color:WindowText">ウィンドウの文字色</div>
+		</div>
+	</section>
+</body>
+</html>
